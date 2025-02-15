@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ToDo.Models;
+using ToDo.Data;
 
 namespace ToDo.Controller
 {
@@ -11,7 +11,7 @@ namespace ToDo.Controller
     {
         public LoginModule()
         {
-            OutputModel.PrintLine(ErrorMsgDict.MsgDict["MSG0000"]);
+            OutputModel.PrintLine(MSG_Dict.MsgDict["MSG0000"]);
             OutputModel.EmptyLine(1);
         }
 
@@ -27,17 +27,17 @@ namespace ToDo.Controller
             {
                 if (string.IsNullOrWhiteSpace(userName))
                 {
-                    Console.WriteLine(ErrorMsgDict.MsgDict["MSG0001"]);
+                    Console.WriteLine(MSG_Dict.MsgDict["MSG0001"]);
                 }
                 if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrWhiteSpace(userPassword))
                 {
-                    Console.WriteLine(ErrorMsgDict.MsgDict["MSG0002"]);
+                    Console.WriteLine(MSG_Dict.MsgDict["MSG0002"]);
                 }
-                Console.WriteLine(ErrorMsgDict.MsgDict["MSG0003"]);
+                Console.WriteLine(MSG_Dict.MsgDict["MSG0003"]);
                 return false;
             }
 
-            Console.WriteLine(ErrorMsgDict.MsgDict["MSG0004"]);
+            Console.WriteLine(MSG_Dict.MsgDict["MSG0004"]);
             return true;
         }
     }

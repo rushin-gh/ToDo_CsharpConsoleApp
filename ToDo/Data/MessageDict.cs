@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ToDo.Models
+namespace ToDo.Data
 {
-    internal class ErrorMsgDict
+    internal class MSG_Dict
     {
         public static Dictionary<string, string> MsgDict = new Dictionary<string, string>
         {

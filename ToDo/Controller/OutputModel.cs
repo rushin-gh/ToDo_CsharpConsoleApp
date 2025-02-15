@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ToDo.Models
+namespace ToDo.Controller
 {
     internal class OutputModel
     {
@@ -20,7 +20,7 @@ namespace ToDo.Models
 
         public static void EmptyLine(int cnt)
         {
-            Console.Write(new String('\n', cnt));
+            Console.Write(new string('\n', cnt));
         }
     }
 }
